@@ -1,6 +1,59 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
-    color: #000;
+    font-size: 16px;
+    text-align: left;
+    color: #0D1B2A;
+    background-color: #E0E1DD;
     margin: 0 auto;
+    max-width: 800px;
+    width: 80%;
+}
+
+h1 {
+    color: #415A77;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    color: #415A77;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+figure {
+    text-align: center;
+}
+
+.small-image img {
+    max-width: 30%;
+    height: auto;
+}
+
+nav {
+    text-align: center;
+}
+
+footer nav {
+    margin-top: 40px;
+}
+
+a {
+    color: #778DA9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #415A77;
+}
+
+.tagline {
+    text-align: center;
 }
