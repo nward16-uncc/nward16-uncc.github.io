@@ -4,9 +4,13 @@ body {
     text-align: left;
     color: #0D1B2A;
     background-color: #E0E1DD;
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
-    max-width: 800px;
-    width: 80%;
 }
 
 h1 {
@@ -62,4 +66,22 @@ a:visited {
 
 .tagline {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    .small-image img {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .small-image img {
+        max-width: 80%;
+    }
 }
