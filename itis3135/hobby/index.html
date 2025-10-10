@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hobby Site 🖥️ Cybersecurity</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Source Code Pro', monospace, Helvetica;
+                background-color: #0b0c10;
+                color: #c5c6c7;
+                margin: 0;
+                transition: background-color 0.5s;
+            }
+
+            header {
+                background-color: #1f2833;
+                padding: 1em;
+                text-align: center;
+            }
+
+            h1 {
+                margin: 0.25em;
+                color: #00ff66;
+                text-shadow: 
+                    0 0 5px #00ff66,
+                    0 0 10px #00ff66,
+                    0 0 20px #00ff66;
+                filter: contrast(120%) brightness(110%);
+                position: relative;
+            }
+
+            nav {
+                background-color: #1f2833;
+                display: flex;
+                justify-content: center;
+                gap: 1em;
+                padding: 0.8em 0;
+                border-top: 1px solid #45a29e;
+                border-bottom: 1px solid #45a29e;
+            }
+
+            nav a {
+                color: #c5c6c7;
+                text-decoration: none;
+                font-weight: bold;
+                cursor: crosshair;
+                transition: color 0.3s;
+            }
+
+            nav a:hover,
+            nav a.active {
+                color: #66fcf1;
+            }
+
+            main {
+                padding: 2em;
+                max-width: 800px;
+                margin: 0 auto;
+                position: relative;
+                min-height: 300px;
+            }
+
+            section {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                pointer-events: none;
+            }
+
+            section.active {
+                opacity: 1;
+                position: relative;
+                pointer-events: all;
+            }
+
+            footer {
+                background-color: #1f2833;
+                color: #c5c6c7;
+                text-align: center;
+                padding: 1em;
+                font-size: 0.9em;
+            }
+
+            a {
+                color: #66fcf1;
+            }
+
+            figure {
+                display: block;
+                text-align: center;
+                margin: 2em auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Cybersecurity</h1>
+            <nav>
+                <a class="active" data-section="what">What</a> 🖥️ 
+                <a data-section="who">Who</a> 🖥️ 
+                <a data-section="when">When</a> 🖥️ 
+                <a data-section="where">Where</a> 🖥️ 
+                <a data-section="how">How</a> 🖥️ 
+                <a data-section="why">Why</a> 🖥️ 
+                <a data-section="ai-prompts">AI Prompts</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="what" class="active">
+                <h2>What Is Cybersecurity?</h2>
+                <p>
+                    Many people have heard the term "cybersecurity" used before, 
+                    but they aren't quite sure what it means.
+                </p>
+                <p>
+                    Cybersecurity is the practice of protecting data, devices, 
+                    networks, and people from potential cyber threats.
+                </p>
+                <table>
+                    <caption>Key Areas of Cybersecurity</caption>
+                    <thead>
+                        <tr>
+                        <th>Field</th>
+                        <th>Focus</th>
+                        <th>Example Activities</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Network Security</td>
+                        <td>Protecting communication between systems</td>
+                        <td>Configuring firewalls, monitoring traffic</td>
+                        </tr>
+                        <tr>
+                        <td>Application Security</td>
+                        <td>Securing software and web apps</td>
+                        <td>Code reviews, penetration testing</td>
+                        </tr>
+                        <tr>
+                        <td>Digital Forensics</td>
+                        <td>Investigating and analyzing breaches</td>
+                        <td>Recovering evidence from systems</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figure>
+                    <img src="images/computer_with_code_for_what_section.jpg" alt="Computer screen showing lines of code representing cybersecurity analysis.">
+                    <figcaption>
+                        <em>
+                            A computer with a text editor running, displaying code. The code shown is just 
+                            just gibberish, but I typically program in Python, Java, Bash/Shell, and recently, 
+                            even C/C++ for Windows API programming. For the prompt I just used: "Computer with 
+                            code on the screen"
+                        </em>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="who">
+                <h2>Who Am I?</h2>
+                <p>
+                    My name is Nathaniel Ward. I'm a student at UNC Charlotte majoring in 
+                    Computer Science with a concentration in cybersecurity.
+                </p>
+                <p>
+                    Ever since I had access to a computer, I enjoyed diving into its internals
+                    to figure out how they work exactly and how I can make them do something that 
+                    they weren't intended to do.
+                </p>
+                <p>
+                    I am always doing my best to engage in this hobby in the most ethical way possible. 
+                    Working with potentially destructive programs requires many precautions that must 
+                    be taken, and I am sure to always take them.
+                </p>
+                <figure>
+                    <img src="images/man_using_laptop_outside_who_section.jpg" alt="Man using a laptop outside">
+                    <figcaption>
+                        <em>
+                            I'm frequently on my laptop outside, around campus, and at home. I enjoy practicing 
+                            in an area where I can get some sun. To get this image, I used the prompt: "man using 
+                            a laptop outside".
+                        </em>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="when">
+                <h2>When Do I Practice Cybersecurity?</h2>
+                <p>
+                    The beauty of this hobby is that you can generally practice anytime of the year and anytime 
+                    of the day. Personally, my favorite time is mid-day when the sun is overhead.
+                </p>
+                <p>
+                    There are certain times of the year when there is a cybersecurity convention or tournament 
+                    in town, which is another great time to expand your skills. There is actually one on November 1st 
+                    here on campus.
+                </p>
+                <form id="practice-form">
+                    <label for="day">When do you practice your hobby?</label><br><br>
+                    <select id="day" name="day" required>
+                        <option value="">--DAY--</option>
+                        <option value="sunday">Sunday</option>
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                    </select><br><br>
+                </form>
+                <figure>
+                    <img src="images/def_con_hacker_conference_when_section.jpg" alt="DEF CON hacker conference in Las Vegas, Nevada">
+                    <figcaption>
+                        <em>
+                            DEF CON is a very popular hacker conference that is hosted every year in 
+                            Las Vegas, Nevada. The prompt I used for this was: "DEF CON hacker conference". 
+                            I tried a few different prompts before deciding on this one. I think it helped that 
+                            Def Con is so popular, so the data set contained a large number of Def Con photos.
+                        </em>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="where">
+                <h2>Where Do I Learn Cybersecurity?</h2>
+                <p>
+                    I typically practice my hobby at my desk, at home. Sometimes I take my laptop outside 
+                    and practice there.
+                </p>
+                <p>
+                    On campus there are multiple clubs and areas where practicing this kind of hobby is 
+                    encouraged, so that is always an option as well.
+                </p>
+                <figure>
+                    <img src="images/outside_college_campus_where_section.jpg" alt="Outside, at a college campus">
+                    <figcaption>
+                        <em>
+                            As previously stated, I learn cybersecurity around campus. I'm aware of many cybersecurity 
+                            clubs that are also active on campus, and I'm looking into them. For the AI prompt, I just 
+                            used: "College campus outside" to represent a typical college campus scene where you could 
+                            find me practicing and learning.
+                        </em>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="how">
+                <h2>How Do I Explore Cybersecurity?</h2>
+                <p>
+                    I have my own lab setup that I built from scratch at home. I have multiple laptops and a 
+                    single board computer called a Raspberry Pi that functions as a small server.
+                </p>
+                <p>
+                    On top of that, I have created virtual machines and networks so that I can simulate real world 
+                    networks.
+                </p>
+                <p>
+                    There are many tools and reading materials that I use to learn. Cybersecurity requires a LOT of 
+                    reading to stay on top of current trends.
+                </p>
+                <figure>
+                    <img src="images/home_lab_cybersecurity_desk_how_section.jpg" alt="A fancy home lab cybersecurity setup at a desk">
+                    <figcaption>
+                        <em>
+                            This is an example of a home lab setup for someone practicing cybersecurity. Keep in mind that this is 
+                            overkill and the typical expert will only need at most a laptop and PC. Virtual machines and networks 
+                            have greatly lessened the amount of machines you need to get started. For the AI prompt, I used: 
+                            "home lab cybersecurity".
+                        </em>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="why">
+                <h2>Why Do I Enjoy Cybersecurity?</h2>
+                <p>
+                    I enjoy cybersecurity because it's so complex and you can dive down a rabbit hole that seemingly 
+                    never ends. It feels like you are unraveling a mystery and it's very satisfying when you figure 
+                    it out after expending lots of time & effort.
+                </p>
+                <p>
+                    I've always had a very focused interest in computers in general, so learning how they work and 
+                    how to make them behave in different ways is very enjoyable to me.
+                </p>
+                <p>
+                    Challenging hobbies always seem to have the biggest "payoff" in my mind. To me, a hobby isn't about 
+                    relaxing or unwinding, it's about the thrill of completing the challenge.
+                </p>
+                <figure>
+                    <img src="images/busy_desktop_workstation_with_papers_why_section.jpg" alt="A busy desktop with papers on the wall">
+                    <figcaption>
+                        <em>
+                            This image is meant to depict the kind of view you will expect when working through an advanced challenge. 
+                            For me, this picture evokes a sense of stimulation because I love this kind of stuff. The papers sprawled around 
+                            on the wall is something I can relate to when I'm trying my best to figure out a CTF challenge. It helps keep 
+                            my thoughts organized and focused. The AI prompt I used was: "success computer challenge".
+                        </em>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="ai-prompts">
+                <h2>AI Prompts</h2>
+                <p>
+                    Uisng the DeepAI model, I made the following prompts to complete this page:
+                </p>
+                <h3>Image Prompts</h3>
+                <ul>
+                    <li>"Computer with code on the screen"</li>
+                    <li>"Man using a laptop outside"</li>
+                    <li>"DEF CON hacker conference"</li>
+                    <li>"College campus outside"</li>
+                    <li>"Home lab cybersecurity"</li>
+                    <li>"Success computer challenge"</li>
+                </ul>
+                <h3>Code Prompts</h3>
+                <ul>
+                    <li>"How do I create sections that look like different pages using HTML/CSS/JS"</li>
+                    <li>"How can I make it so that only a single section is visible at once"</li>
+                    <li>"How do I create a "default section" that is visible when the page loads"</li>
+                    <li>"What are some modern-looking font families"</li>
+                    <li>"What are some unique values for the CSS cursor property"</li>
+                    <li>"How can I make a text element glow green like a CRT monitor"</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p class="tagline">Page Built By <a href="../wardforge.com/">Ward Forge</a> &copy;2025</p>
+            <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        </footer>
+
+        <script>
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('main section');
+
+            navLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    // Remove active class from all links and sections
+                    navLinks.forEach((nav) => nav.classList.remove('active'));
+                    sections.forEach((sec) => sec.classList.remove('active'));
+
+                    // Activate selected link and section
+                    link.classList.add('active');
+                    document.getElementById(link.dataset.section).classList.add('active');
+                });
+            });
+        </script>
+    </body>
+</html>
