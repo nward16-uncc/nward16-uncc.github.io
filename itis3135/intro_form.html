@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel Ward | Introduction Form</title>
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Introduction Form</h2>
+        <h3>Please submit the form below.</h3>
+
+        <form id="introForm" novalidate>
+            <fieldset>
+                <legend>Basic Information</legend>
+                <label>
+                    First Name:
+                    <input type="text" name="firstName" id="firstName" value="Nathaniel" placeholder="Enter first name"
+                        required />
+                </label>
+                <br />
+                <label>
+                    Middle Name / Initial:
+                    <input type="text" name="middleName" id="middleName" value="D" placeholder="Middle initial" />
+                </label>
+                <br />
+                <label>
+                    Nickname / Preferred Name:
+                    <input type="text" name="nickname" id="nickname" value="Nate"
+                        placeholder="Preferred name (optional)" />
+                </label>
+                <br />
+                <label>
+                    Last Name:
+                    <input type="text" name="lastName" id="lastName" value="Ward" placeholder="Enter last name"
+                        required />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Acknowledgement</legend>
+                <label>
+                    Acknowledgement Statement:
+                    <input type="text" name="ackStatement" id="ackStatement"
+                        value="I acknowledge that I have read and understood the course syllabus and expectations."
+                        placeholder="Acknowledgement statement" required />
+                </label>
+                <br />
+                <label>
+                    Date:
+                    <input type="date" name="ackDate" id="ackDate" value="2025-10-26" required />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mascot & Divider</legend>
+                <label>
+                    Mascot Adjective:
+                    <input type="text" name="mascotAdj" id="mascotAdj" value="Nuclear" placeholder="Mascot adjective" />
+                </label>
+                <br />
+                <label>
+                    Mascot Animal:
+                    <input type="text" name="mascotAnimal" id="mascotAnimal" value="Whale"
+                        placeholder="Mascot animal" />
+                </label>
+                <br />
+                <label>
+                    Divider:
+                    <input type="text" name="divider" id="divider" value="|" placeholder="Divider (e.g., |, ~, ♥️)"
+                        maxlength="3" />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Picture</legend>
+                <label>
+                    Upload Picture:
+                    <input type="file" name="picture" id="picture" accept="image/*" />
+                </label>
+                <br />
+                <figure class="small-image">
+                    <img id="previewImage" src="images/atl_zoo.jpg" alt="At the Atlanta Zoo with my family" />
+                    <figcaption id="previewCaption"><em>At the Atlanta Zoo with my family</em></figcaption>
+                </figure>
+                <label>
+                    Picture Caption:
+                    <input type="text" name="picCaption" id="picCaption" value="At the Atlanta Zoo with my family"
+                        placeholder="Picture caption" />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Statement</legend>
+                <textarea name="personalStatement" id="personalStatement" rows="5"
+                    placeholder="Write your personal statement...">I’m currently pursuing a career in cybersecurity. I went to Central Piedmont Community College and attained my Associate’s Degree in May 2025. I’ve come to UNCC so that I can get a Bachelor’s in Computer Science. In my spare time, I mostly just watch YouTube, go hiking from time to time, and attempt to grow my skillset so that I can eventually become a cybersecurity professional.</textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Main Bullets</legend>
+                <ol>
+                    <li><input type="text" name="bullet1" value="Born and raised in Waxhaw, NC."
+                            placeholder="Personal Background" /></li>
+                    <li><input type="text" name="bullet2"
+                            value="Completed Associate’s Degree at Central Piedmont Community College (May 2025)."
+                            placeholder="Education" /></li>
+                    <li><input type="text" name="bullet3"
+                            value="Pursuing a Bachelor of Science in Computer Science at UNCC."
+                            placeholder="Academic" /></li>
+                    <li><input type="text" name="bullet4"
+                            value="Certificate: UNCC Cybersecurity Bootcamp; CompTIA Security+ certified."
+                            placeholder="Certifications" /></li>
+                    <li><input type="text" name="bullet5"
+                            value="Worked in steel fabrication and other varied positions."
+                            placeholder="Professional background" /></li>
+                    <li><input type="text" name="bullet6" value="Primary computer: Lenovo Thinkpad T14 Gen 5 (AMD)."
+                            placeholder="Primary Computer" /></li>
+                    <li><input type="text" name="bullet7"
+                            value="Hobbies: watching YouTube, hiking, growing skills for cybersecurity career."
+                            placeholder="Hobbies / Fun fact" /></li>
+                </ol>
+            </fieldset>
+
+            <fieldset id="coursesSection">
+                <legend>Courses (department, number, name, reason)</legend>
+
+                <div class="course">
+                    <input type="text" name="dept[]" value="ITIS" placeholder="Department (e.g., ITIS)" />
+                    <input type="text" name="num[]" value="3200" placeholder="Course number" />
+                    <input type="text" name="cname[]" value="Professional Practice in IT" placeholder="Course name" />
+                    <input type="text" name="reason[]" value="Because it is very relevant to the field I wish to enter"
+                        placeholder="Reason for taking" />
+                </div>
+
+                <div class="course">
+                    <input type="text" name="dept[]" value="ITIS" placeholder="Department" />
+                    <input type="text" name="num[]" value="3135" placeholder="Course number" />
+                    <input type="text" name="cname[]" value="Back-End Development" placeholder="Course name" />
+                    <input type="text" name="reason[]"
+                        value="Because I am decent at back-end programming, but not front-end"
+                        placeholder="Reason for taking" />
+                </div>
+
+                <div class="course">
+                    <input type="text" name="dept[]" value="ITSC" placeholder="Department" />
+                    <input type="text" name="num[]" value="2600" placeholder="Course number" />
+                    <input type="text" name="cname[]" value="Intro to IT" placeholder="Course name" />
+                    <input type="text" name="reason[]" value="Because it’s required for my degree and concentration"
+                        placeholder="Reason for taking" />
+                </div>
+
+                <div class="course">
+                    <input type="text" name="dept[]" value="ITSC" placeholder="Department" />
+                    <input type="text" name="num[]" value="3688" placeholder="Course number" />
+                    <input type="text" name="cname[]" value="Professional Communication" placeholder="Course name" />
+                    <input type="text" name="reason[]" value="Because I need to improve my soft skills"
+                        placeholder="Reason for taking" />
+                </div>
+
+                <div class="course">
+                    <input type="text" name="dept[]" value="MATH" placeholder="Department" />
+                    <input type="text" name="num[]" value="1242" placeholder="Course number" />
+                    <input type="text" name="cname[]" value="Precalculus/Calculus (or related)"
+                        placeholder="Course name" />
+                    <input type="text" name="reason[]"
+                        value="Because my degree requires it (to my great dissatisfaction)"
+                        placeholder="Reason for taking" />
+                </div>
+
+                <button type="button" id="addCourse">Add Course</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quote</legend>
+                <input type="text" name="quote" id="quote" value="There is nothing impossible to him who will try"
+                    placeholder="Quote" />
+                <br />
+                <input type="text" name="quoteAuthor" id="quoteAuthor" value="Alexander the Great"
+                    placeholder="Quote author" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras</legend>
+                <label>
+                    Funny Thing:
+                    <input type="text" name="funnyThing" id="funnyThing"
+                        value="I love playing any Halo game that was made before 2010 (CE, 2, 3, ODST, Reach)."
+                        placeholder="Funny / interesting thing (optional)" />
+                </label>
+                <br />
+                <label>
+                    Something I'd like to share:
+                    <input type="text" name="share" id="share"
+                        value="I’m currently building a custom Flask-based C2 server for cybersecurity research."
+                        placeholder="Optional" />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Links</legend>
+                <ol>
+                    <li><input type="url" name="link1" value="https://linkedin.com/in/nathanielward"
+                            placeholder="LinkedIn URL" /></li>
+                    <li><input type="url" name="link2" value="https://github.com/nathanielward"
+                            placeholder="GitHub URL" /></li>
+                    <li><input type="url" name="link3" value="https://nathanielward.dev" placeholder="Portfolio URL" />
+                    </li>
+                    <li><input type="url" name="link4" value="https://instagram.com/nuclearwhale"
+                            placeholder="Instagram or social URL" /></li>
+                    <li><input type="url" name="link5" value="mailto:nathanielward@example.com"
+                            placeholder="Email or other link" /></li>
+                </ol>
+            </fieldset>
+
+            <div class="controls">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button" id="clearBtn">Clear</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/introduction.js"></script>
+</body>
+</html>
