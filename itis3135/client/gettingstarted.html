@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HackTheBox Tutorials | Getting Started</title>
+    <link rel="stylesheet" href="styles/default.css" />
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Getting Started with HackTheBox</h2>
+        <p>These steps will guide you from creating an account to launching your first machine in the HackTheBox Labs
+            environment.</p>
+
+        <h3>Create an Account</h3>
+        <p>Visit the HackTheBox site and sign up for a free account. Confirm your email and complete any onboarding
+            steps required by HTB.</p>
+        <p><a href="https://www.hackthebox.com" target="_blank" rel="noopener noreferrer" class="btn">Go to
+                HackTheBox</a></p>
+
+        <h3>Choose Labs or Machines</h3>
+        <p>From the HTB dashboard select either the <strong>Labs</strong> (networked environments) or the
+            <strong>Machines</strong> (individual boxes). Labs provide a simulated network you can connect to; Machines
+            are standalone targets.</p>
+
+        <h3>Set Up Your VPN (if required)</h3>
+        <p>Many HTB labs and retired machines require a VPN connection. Download the connection pack from HTB and follow
+            their instructions to configure OpenVPN or the official client. Only connect to HTB network endpoints
+            provided by HTB.</p>
+
+        <h3>Scan the Target</h3>
+        <p>Run reconnaissance to discover open ports and services. A typical first pass includes an <code>nmap</code>
+            scan. Example command to enumerate ports and services:</p>
+        <div class="code-block">nmap -sC -sV -oA nmap/initial 10.10.10.123</div>
+        <p>Replace the IP with the machine's IP shown in the HTB interface.</p>
+
+        <h3>Enumerate and Research</h3>
+        <p>Investigate discovered services, banner text, and versions. Search for known CVEs, default credentials, or
+            misconfigurations. Use safe, non-destructive techniques while learning.</p>
+
+        <h3>Exploit and Escalate</h3>
+        <p>When you find a plausible path, attempt to gain initial access using appropriate tools or manual techniques.
+            After initial access, work on privilege escalation to capture the root or administrator flag.</p>
+
+        <h3>Document and Learn</h3>
+        <p>Keep notes as you progress. Record commands, outputs, and why a step succeeded or failed. This habit
+            accelerates learning and makes writeups easier later.</p>
+
+        <h3>Ethics & Rules</h3>
+        <p>Only practice on machines and labs you are authorized to access. Do not scan or attack systems without
+            explicit permission. Respect HTB's rules and community guidelines.</p>
+
+        <h3>Ready to try a machine?</h3>
+        <p>When you feel ready, head to the <a href="tutorials.html" target="_blank" class="btn">Tutorials</a> page for a guided, beginner-friendly walkthrough.</p>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>

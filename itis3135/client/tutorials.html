@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HackTheBox Tutorials | Lame Walkthrough</title>
+    <link rel="stylesheet" href="styles/default.css" />
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Tutorials</h2>
+        <p>This walkthrough shows a methodology for approaching your first HTB machine; Lame. Work through each step yourself
+            before using the hints or answers.</p>
+
+        <h3>Step 1 — Reconnaissance</h3>
+        <p>Start with a basic port and service scan to discover open ports and services.</p>
+        <div class="code-block">nmap -sC -sV -oA nmap/initial 10.10.10.123</div>
+        <p>Look for common services such as FTP, HTTP, SSH, and note versions and banners.</p>
+
+        <h3>Step 2 — Service enumeration</h3>
+        <p>Dig deeper into services found during the scan. For web services, try a directory scan. For FTP, check for
+            anonymous access or interesting files.</p>
+        <div class="code-block">gobuster dir -u http://10.10.10.123 -w
+            /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt</div>
+        <p>Record filenames, versions, and any credentials you find; these are often the foothold.</p>
+
+        <h3>Step 3 — Initial Access</h3>
+        <p>Use the information from enumeration to attempt an initial login or exploit. Try non-destructive approaches
+            first, such as logging in with discovered credentials or downloading interesting files for further analysis.
+        </p>
+
+        <h3>Step 4 — Privilege Escalation</h3>
+        <p>After a foothold, collect system information and search for local privilege escalation paths. Useful checks
+            include kernel version, sudo privileges, and SUID binaries.</p>
+        <div class="code-block">
+            uname -a<br>
+            id<br>
+            sudo -l<br>
+            ls -la /home
+        </div>
+
+        <h3>Try it yourself</h3>
+        <p>Fill in the inputs below with what you would try at each stage. Your answers are stored locally in your
+            browser.</p>
+        <label for="initial">Initial foothold command / action</label>
+        <input id="initial" type="text" placeholder="e.g., nmap ... or ftp anonymous login">
+        <label for="escalate">Privilege escalation notes</label>
+        <textarea id="escalate" rows="4" placeholder="What would you try next?"></textarea>
+
+        <h3>Notes on ethics</h3>
+        <p>Only practice on authorized HTB machines. Do not apply these techniques to systems you do not own or have
+            explicit permission to test.</p>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>

@@ -21,7 +21,12 @@ main {
     border-radius: 8px;
 }
 
-h1,
+h1 {
+    color: #F6F8FF;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
 h2,
 h3 {
     color: #8CFF98;
@@ -49,12 +54,6 @@ header {
     align-items: center;
     background-color: #76877D;
     padding: 1rem 2rem;
-}
-
-header h1 {
-    color: #F6F8FF;
-    margin: 0;
-    font-size: 1.5rem;
 }
 
 header nav ul {
@@ -100,4 +99,15 @@ button,
 button:hover,
 .btn:hover {
     background-color: #6be87a;
+}
+
+.code-block {
+  background-color: #1D1E18;
+  color: #8CFF98;
+  border: 1px solid #76877D;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-family: monospace;
+  margin: 0.5rem 0 1rem 0;
+  white-space: pre-line;
 }
