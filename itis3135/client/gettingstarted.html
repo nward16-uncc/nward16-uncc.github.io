@@ -27,45 +27,50 @@
         <h3>Choose Labs or Machines</h3>
         <p>From the HTB dashboard select either the <strong>Labs</strong> (networked environments) or the
             <strong>Machines</strong> (individual boxes). Labs provide a simulated network you can connect to; Machines
-            are standalone targets.</p>
+            are standalone targets.
+        </p>
 
-        <h3>Set Up Your VPN (if required)</h3>
-        <p>Many HTB labs and retired machines require a VPN connection. Download the connection pack from HTB and follow
-            their instructions to configure OpenVPN or the official client. Only connect to HTB network endpoints
-            provided by HTB.</p>
+        <h3>Set Up Your VPN</h3>
+        <p>Many HTB labs and retired machines require a VPN connection. Download the connection pack and follow
+            instructions to configure OpenVPN or the official client.</p>
 
         <h3>Scan the Target</h3>
-        <p>Run reconnaissance to discover open ports and services. A typical first pass includes an <code>nmap</code>
-            scan. Example command to enumerate ports and services:</p>
-        <div class="code-block">nmap -sC -sV -oA nmap/initial 10.10.10.123</div>
+        <p>Run reconnaissance to discover open ports and services. Example command:</p>
+
+        <div class="code-block">
+            <code>
+                <span class="code-term" data-info="Network mapper; scans hosts, ports, and services.">nmap</span><span class="code-term" data-info="-sC runs default scripts for common service enumeration.">-sC</span><span class="code-term" data-info="-sV probes open ports to determine service versions.">-sV</span><span class="code-term" data-info="-oA outputs results in all major formats.">-oA</span><span class="code-term" data-info="Directory where output files will be stored.">nmap/initial</span><span class="code-term" data-info="HTB machine's target IP address.">10.10.10.123</span>
+            </code>
+        </div>
+
         <p>Replace the IP with the machine's IP shown in the HTB interface.</p>
 
         <h3>Enumerate and Research</h3>
-        <p>Investigate discovered services, banner text, and versions. Search for known CVEs, default credentials, or
-            misconfigurations. Use safe, non-destructive techniques while learning.</p>
+        <p>Investigate discovered services, banners, and versions. Look for CVEs or weak configurations.</p>
 
         <h3>Exploit and Escalate</h3>
-        <p>When you find a plausible path, attempt to gain initial access using appropriate tools or manual techniques.
-            After initial access, work on privilege escalation to capture the root or administrator flag.</p>
+        <p>When you find a potential attack vector, attempt initial access, then escalate privileges.</p>
 
         <h3>Document and Learn</h3>
-        <p>Keep notes as you progress. Record commands, outputs, and why a step succeeded or failed. This habit
-            accelerates learning and makes writeups easier later.</p>
+        <p>Keep detailed notes to track progress and improve learning.</p>
 
         <h3>Ethics & Rules</h3>
-        <p>Only practice on machines and labs you are authorized to access. Do not scan or attack systems without
-            explicit permission. Respect HTB's rules and community guidelines.</p>
+        <p>Only test systems you are authorized to access. Follow HTB rules and community guidelines.</p>
 
         <h3>Ready to try a machine?</h3>
-        <p>When you feel ready, head to the <a href="tutorials.html" target="_blank" class="btn">Tutorials</a> page for a guided, beginner-friendly walkthrough.</p>
+        <p>Visit the <a href="tutorials.html" target="_blank" class="btn">Tutorials</a> page for your first guided
+            walkthrough.</p>
     </main>
 
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
 
+    <div id="tooltip"></div>
+
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/tooltip.js" defer></script>
 </body>
 
 </html>
