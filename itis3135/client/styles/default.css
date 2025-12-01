@@ -102,14 +102,14 @@ button:hover,
 }
 
 .code-block {
-  background-color: #1D1E18;
-  color: #8CFF98;
-  border: 1px solid #76877D;
-  padding: 0.75rem;
-  border-radius: 6px;
-  font-family: monospace;
-  margin: 0.5rem 0 1rem 0;
-  white-space: pre-line;
+    background-color: #1D1E18;
+    color: #8CFF98;
+    border: 1px solid #76877D;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-family: monospace;
+    margin: 0.5rem 0 1rem 0;
+    white-space: pre-line;
 }
 
 #tooltip {
@@ -137,4 +137,38 @@ button:hover,
 
 .code-term:hover {
     background: rgba(0, 198, 255, 0.2);
+}
+
+.feedback {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.correct {
+    color: #4cff9f;
+    opacity: 1;
+}
+
+.incorrect {
+    color: #ff4c4c;
+    opacity: 1;
+}
+
+#check-answers {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 18px;
+    background: #1ba672;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#check-answers:hover {
+    background: #26c586;
 }

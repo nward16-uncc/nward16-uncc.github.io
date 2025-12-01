@@ -15,7 +15,8 @@
 
     <main>
         <h2>Tutorials</h2>
-        <p>This walkthrough shows a methodology for approaching your first HTB machine; Lame. Work through each step yourself
+        <p>This walkthrough shows a methodology for approaching your first HTB machine; Lame. Work through each step
+            yourself
             before using the hints or answers.</p>
 
         <h3>Step 1 — Reconnaissance</h3>
@@ -48,10 +49,16 @@
         <h3>Try it yourself</h3>
         <p>Fill in the inputs below with what you would try at each stage. Your answers are stored locally in your
             browser.</p>
+
         <label for="initial">Initial foothold command / action</label>
         <input id="initial" type="text" placeholder="e.g., nmap ... or ftp anonymous login">
+        <div id="initial-feedback" class="feedback"></div>
+
         <label for="escalate">Privilege escalation notes</label>
         <textarea id="escalate" rows="4" placeholder="What would you try next?"></textarea>
+        <div id="escalate-feedback" class="feedback"></div>
+
+        <button id="check-answers" class="btn">Check Answers</button>
 
         <h3>Notes on ethics</h3>
         <p>Only practice on authorized HTB machines. Do not apply these techniques to systems you do not own or have
@@ -64,6 +71,7 @@
 
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/checkAnswers.js"></script>
 </body>
 
 </html>
