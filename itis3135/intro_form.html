@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nathaniel Ward | Introduction Form</title>
-    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <link rel="stylesheet" type="text/css" href="styles/default.css" />
 </head>
 
 <body>
@@ -20,146 +20,296 @@
         <form id="introForm" novalidate>
             <fieldset>
                 <legend>Basic Information</legend>
-
-                <label for="firstName">First Name:</label>
-                <input type="text" name="firstName" id="firstName" value="Nathaniel" required />
-
-                <label for="middleName">Middle Name / Initial:</label>
-                <input type="text" name="middleName" id="middleName" value="D" />
-
-                <label for="nickname">Nickname / Preferred Name:</label>
-                <input type="text" name="nickname" id="nickname" value="Nate" />
-
-                <label for="lastName">Last Name:</label>
-                <input type="text" name="lastName" id="lastName" value="Ward" required />
+                <label for="firstName">First Name:
+                    <input type="text" name="firstName" id="firstName" value="Nathaniel" placeholder="Enter first name"
+                        required />
+                </label>
+                <br />
+                <label for="middleName">Middle Name / Initial:
+                    <input type="text" name="middleName" id="middleName" value="D" placeholder="Middle initial" />
+                </label>
+                <br />
+                <label for="nickname">Nickname / Preferred Name:
+                    <input type="text" name="nickname" id="nickname" value="Nate"
+                        placeholder="Preferred name (optional)" />
+                </label>
+                <br />
+                <label for="lastName">Last Name:
+                    <input type="text" name="lastName" id="lastName" value="Ward" placeholder="Enter last name"
+                        required />
+                </label>
             </fieldset>
 
             <fieldset>
                 <legend>Acknowledgement</legend>
-
-                <label for="ackStatement">Acknowledgement Statement:</label>
-                <input type="text" name="ackStatement" id="ackStatement"
-                    value="I acknowledge that I have read and understood the course syllabus and expectations."
-                    required />
-
-                <label for="ackDate">Date:</label>
-                <input type="date" name="ackDate" id="ackDate" value="2025-10-26" required />
+                <label for="ackStatement">Acknowledgement Statement:
+                    <input type="text" name="ackStatement" id="ackStatement"
+                        value="I acknowledge that I have read and understood the course syllabus and expectations."
+                        placeholder="Acknowledgement statement" required />
+                </label>
+                <br />
+                <label for="ackDate">Date:
+                    <input type="date" name="ackDate" id="ackDate" value="2025-10-26" required />
+                </label>
             </fieldset>
 
             <fieldset>
                 <legend>Mascot & Divider</legend>
-
-                <label for="mascotAdj">Mascot Adjective:</label>
-                <input type="text" name="mascotAdj" id="mascotAdj" value="Nuclear" />
-
-                <label for="mascotAnimal">Mascot Animal:</label>
-                <input type="text" name="mascotAnimal" id="mascotAnimal" value="Whale" />
-
-                <label for="divider">Divider:</label>
-                <input type="text" name="divider" id="divider" value="|" maxlength="3" />
+                <label for="mascotAdj">Mascot Adjective:
+                    <input type="text" name="mascotAdj" id="mascotAdj" value="Nuclear" placeholder="Mascot adjective" />
+                </label>
+                <br />
+                <label for="mascotAnimal">Mascot Animal:
+                    <input type="text" name="mascotAnimal" id="mascotAnimal" value="Whale"
+                        placeholder="Mascot animal" />
+                </label>
+                <br />
+                <label for="divider">Divider:
+                    <input type="text" name="divider" id="divider" value="|" placeholder="Divider (e.g., |, ~, ♥️)"
+                        maxlength="3" />
+                </label>
             </fieldset>
 
             <fieldset>
                 <legend>Picture</legend>
-
-                <label for="picture">Upload Picture:</label>
-                <input type="file" name="picture" id="picture" accept="image/*" />
-
+                <label for="picture">Upload Picture:
+                    <input type="file" name="picture" id="picture" accept="image/*" />
+                </label>
+                <br />
                 <figure class="small-image">
                     <img id="previewImage" src="images/atl_zoo.jpg" alt="At the Atlanta Zoo with my family" />
                     <figcaption id="previewCaption"><em>At the Atlanta Zoo with my family</em></figcaption>
                 </figure>
-
-                <label for="picCaption">Picture Caption:</label>
-                <input type="text" name="picCaption" id="picCaption" value="At the Atlanta Zoo with my family" />
+                <label for="picCaption">Picture Caption:
+                    <input type="text" name="picCaption" id="picCaption" value="At the Atlanta Zoo with my family"
+                        placeholder="Picture caption" />
+                </label>
             </fieldset>
 
             <fieldset>
                 <legend>Personal Statement</legend>
-                <label for="personalStatement"></label>
-                <textarea name="personalStatement" id="personalStatement"
-                    rows="5">I’m currently pursuing a career in cybersecurity...</textarea>
+                <label for="personalStatement">Personal Statement:
+                    <textarea name="personalStatement" id="personalStatement" rows="5"
+                        placeholder="Write your personal statement...">I’m currently pursuing a career in cybersecurity. I went to Central Piedmont Community College and attained my Associate’s Degree in May 2025. I’ve come to UNCC so that I can get a Bachelor’s in Computer Science. In my spare time, I mostly just watch YouTube, go hiking from time to time, and attempt to grow my skillset so that I can eventually become a cybersecurity professional.</textarea>
+                </label>
             </fieldset>
 
             <fieldset>
                 <legend>Main Bullets</legend>
                 <ol>
-                    <li><label for="bullet1"></label><input type="text" name="bullet1" id="bullet1"
-                            value="Born and raised in Waxhaw, NC."></li>
-                    <li><label for="bullet2"></label><input type="text" name="bullet2" id="bullet2"
-                            value="Completed Associate’s Degree..."></li>
-                    <li><label for="bullet3"></label><input type="text" name="bullet3" id="bullet3"
-                            value="Pursuing a Bachelor..."></li>
-                    <li><label for="bullet4"></label><input type="text" name="bullet4" id="bullet4"
-                            value="Certificate: Security+"></li>
-                    <li><label for="bullet5"></label><input type="text" name="bullet5" id="bullet5"
-                            value="Worked in steel fabrication"></li>
-                    <li><label for="bullet6"></label><input type="text" name="bullet6" id="bullet6"
-                            value="Lenovo Thinkpad T14 Gen 5"></li>
-                    <li><label for="bullet7"></label><input type="text" name="bullet7" id="bullet7"
-                            value="Hobbies: YouTube, hiking"></li>
+                    <li>
+                        <label>Personal Background:
+                            <input type="text" name="bullet1" value="Born and raised in Waxhaw, NC."
+                                placeholder="Personal Background" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>Education:
+                            <input type="text" name="bullet2"
+                                value="Completed Associate’s Degree at Central Piedmont Community College (May 2025)."
+                                placeholder="Education" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>Academic:
+                            <input type="text" name="bullet3"
+                                value="Pursuing a Bachelor of Science in Computer Science at UNCC."
+                                placeholder="Academic" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>Certifications:
+                            <input type="text" name="bullet4"
+                                value="Certificate: UNCC Cybersecurity Bootcamp; CompTIA Security+ certified."
+                                placeholder="Certifications" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>Professional background:
+                            <input type="text" name="bullet5"
+                                value="Worked in steel fabrication and other varied positions."
+                                placeholder="Professional background" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>Primary Computer:
+                            <input type="text" name="bullet6" value="Primary computer: Lenovo Thinkpad T14 Gen 5 (AMD)."
+                                placeholder="Primary Computer" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>Hobbies / Fun fact:
+                            <input type="text" name="bullet7"
+                                value="Hobbies: watching YouTube, hiking, growing skills for cybersecurity career."
+                                placeholder="Hobbies / Fun fact" />
+                        </label>
+                    </li>
                 </ol>
             </fieldset>
 
             <fieldset id="coursesSection">
                 <legend>Courses (department, number, name, reason)</legend>
 
-                <div class="course">
-                    <label for="dept1"></label><input id="dept1" type="text" name="dept[]" value="ITIS">
-                    <label for="num1"></label><input id="num1" type="text" name="num[]" value="3200">
-                    <label for="cname1"></label><input id="cname1" type="text" name="cname[]" value="Intro to Infosec">
-                    <label for="reason1"></label><input id="reason1" type="text" name="reason[]"
-                        value="Because it is relevant">
-                </div>
+                <section class="course">
+                    <label>Department:
+                        <input type="text" name="dept[]" value="ITIS" placeholder="Department (e.g., ITIS)" />
+                    </label>
+                    <label>Course number:
+                        <input type="text" name="num[]" value="3200" placeholder="Course number" />
+                    </label>
+                    <label>Course name:
+                        <input type="text" name="cname[]" value="Intro to Infosec and Priv" placeholder="Course name" />
+                    </label>
+                    <label>Reason:
+                        <input type="text" name="reason[]"
+                            value="Because it is very relevant to the field I wish to enter"
+                            placeholder="Reason for taking" />
+                    </label>
+                </section>
+
+                <section class="course">
+                    <label>Department:
+                        <input type="text" name="dept[]" value="ITIS" placeholder="Department" />
+                    </label>
+                    <label>Course number:
+                        <input type="text" name="num[]" value="3135" placeholder="Course number" />
+                    </label>
+                    <label>Course name:
+                        <input type="text" name="cname[]" value="Front-End Web Development" placeholder="Course name" />
+                    </label>
+                    <label>Reason:
+                        <input type="text" name="reason[]"
+                            value="Because I am decent at back-end programming, but not front-end"
+                            placeholder="Reason for taking" />
+                    </label>
+                </section>
+
+                <section class="course">
+                    <label>Department:
+                        <input type="text" name="dept[]" value="ITSC" placeholder="Department" />
+                    </label>
+                    <label>Course number:
+                        <input type="text" name="num[]" value="2600" placeholder="Course number" />
+                    </label>
+                    <label>Course name:
+                        <input type="text" name="cname[]" value="Computing Professionals II"
+                            placeholder="Course name" />
+                    </label>
+                    <label>Reason:
+                        <input type="text" name="reason[]" value="Because it’s required for my degree and concentration"
+                            placeholder="Reason for taking" />
+                    </label>
+                </section>
+
+                <section class="course">
+                    <label>Department:
+                        <input type="text" name="dept[]" value="ITSC" placeholder="Department" />
+                    </label>
+                    <label>Course number:
+                        <input type="text" name="num[]" value="3688" placeholder="Course number" />
+                    </label>
+                    <label>Course name:
+                        <input type="text" name="cname[]" value="Comp and Their Impact on Society"
+                            placeholder="Course name" />
+                    </label>
+                    <label>Reason:
+                        <input type="text" name="reason[]" value="Because I need to improve my soft skills"
+                            placeholder="Reason for taking" />
+                    </label>
+                </section>
+
+                <section class="course">
+                    <label>Department:
+                        <input type="text" name="dept[]" value="MATH" placeholder="Department" />
+                    </label>
+                    <label>Course number:
+                        <input type="text" name="num[]" value="1242" placeholder="Course number" />
+                    </label>
+                    <label>Course name:
+                        <input type="text" name="cname[]" value="Calculus II" placeholder="Course name" />
+                    </label>
+                    <label>Reason:
+                        <input type="text" name="reason[]"
+                            value="Because my degree requires it (to my great dissatisfaction)"
+                            placeholder="Reason for taking" />
+                    </label>
+                </section>
 
                 <button type="button" id="addCourse">Add Course</button>
             </fieldset>
 
             <fieldset>
                 <legend>Quote</legend>
-
-                <label for="quote">Quote:</label>
-                <input type="text" name="quote" id="quote" value="There is nothing impossible to him who will try">
-
-                <label for="quoteAuthor">Author:</label>
-                <input type="text" name="quoteAuthor" id="quoteAuthor" value="Alexander the Great">
+                <label for="quote">Quote:
+                    <input type="text" name="quote" id="quote" value="There is nothing impossible to him who will try"
+                        placeholder="Quote" />
+                </label>
+                <br />
+                <label for="quoteAuthor">Quote author:
+                    <input type="text" name="quoteAuthor" id="quoteAuthor" value="Alexander the Great"
+                        placeholder="Quote author" />
+                </label>
             </fieldset>
 
             <fieldset>
                 <legend>Extras</legend>
-
-                <label for="funnyThing">Funny Thing:</label>
-                <input type="text" name="funnyThing" id="funnyThing" value="I love playing Halo...">
-
-                <label for="share">Something I'd like to share:</label>
-                <input type="text" name="share" id="share" value="I’m currently building a Flask-based C2...">
+                <label for="funnyThing">Funny Thing:
+                    <input type="text" name="funnyThing" id="funnyThing"
+                        value="I love playing any Halo game that was made before 2010 (CE, 2, 3, ODST, Reach)."
+                        placeholder="Funny / interesting thing (optional)" />
+                </label>
+                <br />
+                <label for="share">Something I'd like to share:
+                    <input type="text" name="share" id="share"
+                        value="I’m currently building a custom Flask-based C2 server for cybersecurity research."
+                        placeholder="Optional" />
+                </label>
             </fieldset>
 
             <fieldset>
                 <legend>Links</legend>
                 <ol>
-                    <li><label for="link1"></label><input type="url" name="link1" id="link1"
-                            value="https://linkedin.com/in/nathanielward"></li>
-                    <li><label for="link2"></label><input type="url" name="link2" id="link2"
-                            value="https://github.com/nathanielward"></li>
-                    <li><label for="link3"></label><input type="url" name="link3" id="link3"
-                            value="https://nathanielward.dev"></li>
-                    <li><label for="link4"></label><input type="url" name="link4" id="link4"
-                            value="https://instagram.com/nuclearwhale"></li>
-                    <li><label for="link5"></label><input type="url" name="link5" id="link5"
-                            value="mailto:nathanielward@example.com"></li>
+                    <li>
+                        <label>LinkedIn URL:
+                            <input type="url" name="link1" value="https://linkedin.com/in/nathanielward"
+                                placeholder="LinkedIn URL" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>GitHub URL:
+                            <input type="url" name="link2" value="https://github.com/nathanielward"
+                                placeholder="GitHub URL" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>Portfolio URL:
+                            <input type="url" name="link3" value="https://nathanielward.dev"
+                                placeholder="Portfolio URL" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>Instagram or social URL:
+                            <input type="url" name="link4" value="https://instagram.com/nuclearwhale"
+                                placeholder="Instagram or social URL" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>Email or other link:
+                            <input type="url" name="link5" value="mailto:nathanielward@example.com"
+                                placeholder="Email or other link" />
+                        </label>
+                    </li>
                 </ol>
             </fieldset>
 
             <div class="controls">
                 <button type="submit">Submit</button>
-                <button type="reset" id="formReset">Reset</button>
+                <button type="reset">Reset</button>
                 <button type="button" id="clearBtn">Clear</button>
                 <button type="button" id="generateJsonBtn">Generate JSON</button>
                 <button type="button" id="generateHtmlBtn">Generate HTML</button>
             </div>
         </form>
-
     </main>
 
     <footer>

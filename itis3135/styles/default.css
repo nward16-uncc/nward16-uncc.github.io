@@ -21,7 +21,9 @@ h1 {
     margin-bottom: 10px;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     color: #415A77;
     text-align: left;
     margin-top: 20px;
@@ -68,12 +70,61 @@ a:visited {
     text-align: center;
 }
 
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #c4c7cb;
+    background-color: #ffffff;
+}
+
+.controls {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.course,
+.course-entry {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.deleteCourse {
+    background-color: #D64550;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.deleteCourse:hover {
+    background-color: #A71D2A;
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 15px;
     }
+
     .small-image img {
         max-width: 50%;
+    }
+
+    .course,
+    .course-entry {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -81,6 +132,7 @@ a:visited {
     body {
         font-size: 14px;
     }
+
     .small-image img {
         max-width: 80%;
     }
